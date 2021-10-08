@@ -1,0 +1,42 @@
+def cal():
+    print("a")
+    a=int(input())
+    print("b")
+    b=int(input())
+    print("op")
+    op=input()
+    if a==45 and b==3 and op=='*':
+        print("555")
+    elif a==56 and b==9 and op=='+' :
+        print("77")
+    elif a==56 and b==6 and op=='/':
+        print("4")
+    elif op=='+':
+        result=a+b
+        print(result)
+    elif op=='-':
+        result=a-b
+        print(result)
+    elif op=='*':
+        result=a*b
+        print(result)
+    elif op=='/':
+        result=a/b
+        print(result)
+    else:
+        print("invalid")
+        
+    again() 
+    
+    
+def again():
+    ans=input("do you want to continue (y for yes and n for no)")
+    if ans=='y':
+        cal()
+    elif ans=='n':
+        print("adios")
+    else:
+        again()
+        
+        
+cal()
